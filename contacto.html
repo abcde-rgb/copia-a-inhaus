@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · inHAUS — Solicita tu proyecto y catálogo</title>
+  <meta name="description" content="Contacta con inHAUS. Solicita el catálogo de casas modulares, pide presupuesto o empieza tu proyecto a medida. Te respondemos en menos de 24 h.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header on-light">
+    <div class="container">
+      <a href="index.html" class="brand">in<b>HAUS</b><span class="dot">.</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="colecciones.html">Colecciones</a>
+        <a href="on-demand.html">inHAUS On Demand</a>
+        <a href="professional.html">Professional</a>
+        <a href="nosotros.html">Sobre inHAUS</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+      <div class="header-cta"><a href="#form" class="btn btn--ghost-light">Solicita tu proyecto</a></div>
+      <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="colecciones.html"><span class="num">01</span>Colecciones</a>
+    <a href="on-demand.html"><span class="num">02</span>inHAUS On Demand</a>
+    <a href="professional.html"><span class="num">03</span>Professional</a>
+    <a href="nosotros.html"><span class="num">04</span>Sobre inHAUS</a>
+    <a href="contacto.html"><span class="num">05</span>Contacto</a>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section" style="padding-top:calc(var(--header-h) + 4rem)">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Contacto</span>
+        <h1 class="h1">Empecemos a imaginar tu casa</h1>
+        <p class="lead">Cuéntanos tu idea y te enviaremos el catálogo completo con plantas y precios. Te respondemos en menos de 24 horas laborables.</p>
+      </div>
+
+      <div class="info-grid" style="margin-bottom:3.5rem">
+        <div class="info-card" data-reveal>
+          <span class="eyebrow">Llámanos</span>
+          <p><a href="tel:+34960000000">+34 960 000 000</a></p>
+          <p class="muted">Lun–Vie · 9:00–18:00</p>
+        </div>
+        <div class="info-card" data-reveal data-delay="1">
+          <span class="eyebrow">Escríbenos</span>
+          <p><a href="mailto:hola@inhaus-clone.com">hola@inhaus-clone.com</a></p>
+          <p class="muted">Particulares y profesionales</p>
+        </div>
+        <div class="info-card" data-reveal data-delay="2">
+          <span class="eyebrow">Visítanos</span>
+          <p>Polígono Tecnológico<br>46980 Valencia, España</p>
+          <p class="muted">Con cita previa</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="split" id="form" style="align-items:start">
+        <div>
+          <form class="form" data-demo novalidate>
+            <div class="form-success" role="status">¡Gracias! Hemos recibido tu solicitud. Te contactaremos muy pronto con el catálogo y los siguientes pasos.</div>
+            <div class="row">
+              <div class="field">
+                <label for="nombre">Nombre y apellidos</label>
+                <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="tucorreo@email.com">
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="tel">Teléfono</label>
+                <input id="tel" name="tel" type="tel" placeholder="+34 600 000 000">
+              </div>
+              <div class="field">
+                <label for="interes">Me interesa</label>
+                <select id="interes" name="interes">
+                  <option>Una casa de catálogo</option>
+                  <option>Un proyecto On Demand</option>
+                  <option>inHAUS Professional (B2B)</option>
+                  <option>Solo recibir el catálogo</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="provincia">Provincia / país</label>
+                <input id="provincia" name="provincia" type="text" placeholder="Dónde construirías">
+              </div>
+              <div class="field">
+                <label for="presupuesto">Presupuesto estimado</label>
+                <select id="presupuesto" name="presupuesto">
+                  <option>Por definir</option>
+                  <option>150.000 – 250.000 €</option>
+                  <option>250.000 – 400.000 €</option>
+                  <option>400.000 – 700.000 €</option>
+                  <option>Más de 700.000 €</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensaje">Cuéntanos tu proyecto</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Parcela, número de dormitorios, estilo, plazos..."></textarea>
+            </div>
+            <label class="checkbox">
+              <input type="checkbox" required>
+              <span>He leído y acepto la política de privacidad y el tratamiento de mis datos para gestionar mi solicitud.</span>
+            </label>
+            <div>
+              <button type="submit" class="btn">Enviar solicitud <span class="arrow">→</span></button>
+            </div>
+            <p class="form-note">Demostración: el formulario no envía datos a ningún servidor.</p>
+          </form>
+        </div>
+
+        <div data-reveal data-delay="1">
+          <div class="split__media" style="aspect-ratio:3/4;background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80')"></div>
+          <div style="margin-top:1.5rem">
+            <h3 class="h3" style="margin-bottom:.8rem">¿Prefieres que te llamemos?</h3>
+            <p class="muted" style="margin-bottom:1.2rem">Déjanos tu teléfono en el formulario y un arquitecto te llamará para resolver tus dudas sin compromiso.</p>
+            <div class="socials">
+              <a href="#" aria-label="Instagram">Ig</a>
+              <a href="#" aria-label="Pinterest">Pi</a>
+              <a href="#" aria-label="YouTube">Yt</a>
+              <a href="#" aria-label="LinkedIn">In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP STRIP -->
+  <section class="section--tight" style="padding-bottom:0">
+    <div style="height:380px;background:linear-gradient(135deg,#1c1b19,#2b2a28);position:relative;display:grid;place-items:center;color:rgba(255,255,255,.5);font-family:var(--font-head);letter-spacing:.1em">
+      <div style="text-align:center">
+        <div style="font-size:1.4rem;color:#fff;margin-bottom:.5rem">inHAUS · Valencia</div>
+        <div style="font-size:.85rem;letter-spacing:.18em;text-transform:uppercase">Polígono Tecnológico · España</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">in<b>HAUS</b><span class="dot">.</span></a>
+          <p>Casas modulares de hormigón de alta gama, diseñadas y fabricadas con eficiencia energética y entregadas llave en mano.</p>
+          <div class="socials"><a href="#">Ig</a><a href="#">Pi</a><a href="#">Yt</a><a href="#">In</a></div>
+        </div>
+        <div class="footer-col"><h5>Explora</h5><ul><li><a href="colecciones.html">Colecciones</a></li><li><a href="on-demand.html">inHAUS On Demand</a></li><li><a href="professional.html">inHAUS Professional</a></li><li><a href="nosotros.html">Sobre inHAUS</a></li></ul></div>
+        <div class="footer-col"><h5>Compañía</h5><ul><li><a href="nosotros.html">El método</a></li><li><a href="nosotros.html">Eficiencia energética</a></li><li><a href="contacto.html">Trabaja con nosotros</a></li><li><a href="contacto.html">Prensa</a></li></ul></div>
+        <div class="footer-col footer-contact"><h5>Contacto</h5><p>Polígono Tecnológico<br>46980 Valencia, España</p><p><a href="tel:+34960000000">+34 960 000 000</a></p><p><a href="mailto:hola@inhaus-clone.com">hola@inhaus-clone.com</a></p></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> inHAUS clone. Proyecto de demostración.</span>
+        <div class="legal"><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
