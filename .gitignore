@@ -1,0 +1,11 @@
+# Dependencies (none required — static site)
+node_modules/
+package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Local
+.vercel/
