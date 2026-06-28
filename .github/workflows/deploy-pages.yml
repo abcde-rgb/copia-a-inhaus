@@ -28,6 +28,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Habilita GitHub Pages automáticamente si aún no lo está
+          enablement: true
 
       - name: Upload artifact (sitio estático en la raíz)
         uses: actions/upload-pages-artifact@v3
